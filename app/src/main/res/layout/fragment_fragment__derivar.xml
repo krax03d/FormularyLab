@@ -14,15 +14,33 @@
         android:layout_width="match_parent"
         android:layout_height="74dp"
         android:gravity="center|center_horizontal"
-        android:text="Derivacion"
+        android:text="@string/derivacion_tittle"
         android:textSize="36sp" />
 
     <TextView
         android:id="@+id/tv_content_derivacion"
         android:layout_width="match_parent"
-        android:layout_height="261dp"
+        android:layout_height="190dp"
         android:gravity="bottom|clip_horizontal|center|center_horizontal"
-        android:text="Si sirve aun"
+        android:text="@string/derivacion_content"
         android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/derivacion_save" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/derivacion_more" />
 
 </LinearLayout>
