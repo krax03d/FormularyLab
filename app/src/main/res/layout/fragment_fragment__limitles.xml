@@ -2,13 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/limitles_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Fragment_Limitles">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_limitles_tittle"
         android:layout_width="match_parent"
         android:layout_height="62dp"
         android:gravity="center|center_horizontal"
@@ -16,7 +17,7 @@
         android:textSize="30sp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv_limitles_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center|center_horizontal"
@@ -24,20 +25,20 @@
         android:textSize="18sp" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/iv_limitles_image"
         android:layout_width="match_parent"
         android:layout_height="119dp"
         android:contentDescription="@string/limitles_tittle"
         android:src="@mipmap/ic_launcher_foreground" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/bt_limitles_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/limitles_save" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/bt_limitles_more"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/limitles_more" />

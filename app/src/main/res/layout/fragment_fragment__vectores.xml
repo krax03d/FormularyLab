@@ -1,21 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Fragment_Vectores">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/tv_vectores_tittle"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="match_parent"
-        android:layout_height="96dp"
+        android:layout_height="79dp"
         android:gravity="center|center_horizontal"
-        android:text="Vectores"
-        android:textSize="36sp" />
+        android:text="@string/vectors_tittle"
+        android:textSize="30sp" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/tv_vectors_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal"
+        android:text="@string/vectors_content"
+        android:textSize="21sp" />
+
+    <ImageView
+        android:id="@+id/iv_vectors_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/vectors_tittle"
+        android:src="@mipmap/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/bt_vectors_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vectors_save" />
+
+    <Button
+        android:id="@+id/bt_vectors_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vectors_more" />
+</LinearLayout>

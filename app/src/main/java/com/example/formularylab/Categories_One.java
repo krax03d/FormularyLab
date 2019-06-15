@@ -10,7 +10,9 @@ import android.widget.Toast;
 public class Categories_One extends AppCompatActivity implements Fragment_Derivar.OnFragmentInteractionListener,
         Fragment_Integrar.OnFragmentInteractionListener,
         Fragment_Vectores.OnFragmentInteractionListener,
-        Fragment_Limitles.OnFragmentInteractionListener{
+        Fragment_Limitles.OnFragmentInteractionListener,
+        Fragment_move_rectiline.OnFragmentInteractionListener,
+        Fragment_Move_Parabolic.OnFragmentInteractionListener{
 
     TextView tv1;
     TextView tv2;
@@ -18,6 +20,8 @@ public class Categories_One extends AppCompatActivity implements Fragment_Deriva
     Fragment_Integrar fragment_integrar;
     Fragment_Vectores fragment_vectores;
     Fragment_Limitles fragment_limitles;
+    Fragment_move_rectiline fragment_move_rectiline;
+    Fragment_Move_Parabolic fragment_move_parabolic;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +30,8 @@ public class Categories_One extends AppCompatActivity implements Fragment_Deriva
         fragment_integrar= new Fragment_Integrar();
         fragment_vectores=new Fragment_Vectores();
         fragment_limitles=new Fragment_Limitles();
+        fragment_move_rectiline=new Fragment_move_rectiline();
+        fragment_move_parabolic=new Fragment_Move_Parabolic();
         //Recibimos el valor de la sub_categoria
         //tv1=(TextView) findViewById(R.id.tv_Cal);
         //tv2=(TextView) findViewById(R.id.tv_cal2);
@@ -55,7 +61,13 @@ public class Categories_One extends AppCompatActivity implements Fragment_Deriva
              switch (seleccion_subcategory) {
                      case 0:
                         transaction.add(R.id.frame_fragments, fragment_vectores);
-                                break;
+                        break;
+                 case 1:
+                     transaction.add(R.id.frame_fragments, fragment_move_rectiline);
+                     break;
+                 case 2:
+                     transaction.add(R.id.frame_fragments, fragment_move_parabolic);
+                     break;
 
                 }
                 transaction.commit();

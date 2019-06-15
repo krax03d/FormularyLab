@@ -2,44 +2,43 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/tv_integrals_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Fragment_Integrar">
+    tools:context=".Fragment_move_rectiline">
 
     <TextView
-        android:id="@+id/tv_integrals_tittle"
+        android:id="@+id/tv_move_rectiline_uniform_little"
         android:layout_width="match_parent"
         android:layout_height="76dp"
         android:gravity="center|center_horizontal"
-        android:text="@string/integrar_tittle"
-        android:textSize="30sp" />
-
-    <TextView
-        android:id="@+id/tv_integrals_content"
-        android:layout_width="match_parent"
-        android:layout_height="254dp"
-        android:gravity="center|center_horizontal"
-        android:text="@string/integrar_content"
+        android:text="@string/move_rectiline_uniform_tittle"
         android:textSize="24sp" />
 
-    <ImageView
-        android:id="@+id/iv_integrals_image"
+    <TextView
+        android:id="@+id/tv_move_rectiline_uniform_content"
         android:layout_width="match_parent"
-        android:layout_height="86dp"
-        android:contentDescription="@string/integrar_tittle"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal"
+        android:text="@string/move_rectiline_uniform_content"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/iv_move_rectiline_uniform_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/move_rectiline_uniform_tittle"
         android:src="@mipmap/ic_launcher_foreground" />
 
     <Button
-        android:id="@+id/bt_integrals_save"
+        android:id="@+id/bt_move_rectiline_uniform_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/integrar_save" />
+        android:text="@string/move_rectiline_uniform_save" />
 
     <Button
-        android:id="@+id/bt_integrals_more"
+        android:id="@+id/bt_move_rectiline_uniform_more"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/integrar_more" />
+        android:text="@string/move_rectiline_uniform_more" />
 </LinearLayout>
