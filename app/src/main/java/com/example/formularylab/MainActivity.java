@@ -61,15 +61,22 @@ public class MainActivity extends AppCompatActivity {
         ListTrigo.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent category= null;
-                switch(position){
-                    case 1:
-                            category = new Intent(MainActivity.this,Categories.class);
-
+                Intent categorys=null;
+                switch (position){
+                    case 0:
+                        Toast.makeText(getApplicationContext(),"Aver si sirve",Toast.LENGTH_LONG).show();
+                        categorys=new Intent(MainActivity.this,Categories.class);
+                        startActivity(categorys);
                         break;
-
+                    case 1:
+                        Toast.makeText(getApplicationContext(),"Aver si sirve",Toast.LENGTH_LONG).show();
+                        categorys=new Intent(MainActivity.this,Categories.class);
+                        startActivity(categorys);
+                        break;
                 }
+
             }
         });
+
     }
 }
