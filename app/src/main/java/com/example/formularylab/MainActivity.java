@@ -48,23 +48,20 @@ public class MainActivity extends AppCompatActivity {
                        // Toast.makeText(getApplicationContext(),"Seleccione Alguna Opción",Toast.LENGTH_LONG).show();
                         break;
                     case 1:
-                       // miBundle_category.putInt("Selected_Category",seleccion_category);
-                        //category.putExtras(miBundle_category);
+
                         ArrayAdapter<CharSequence> adapterListView_Calcu=ArrayAdapter.createFromResource(getApplicationContext(), R.array.Calcu_options,R.layout.listview_item_size);
                         ListTrigo.setAdapter(adapterListView_Calcu);
                         //Toast.makeText(getApplicationContext(),"Selecciono 1",Toast.LENGTH_LONG).show();
                         break;
                     case 2:
-                        //miBundle_category.putInt("Selected_Category",seleccion_category);
-                        //category.putExtras(miBundle_category);
+
                         //Toast.makeText(getApplicationContext(),"Selecciono 2",Toast.LENGTH_LONG).show();
                         ArrayAdapter<CharSequence> adapterListView_Fisica=ArrayAdapter.createFromResource(getApplicationContext(), R.array.Fisica_options,R.layout.listview_item_size);
                         ListTrigo.setAdapter(adapterListView_Fisica);
 
                         break;
                     case 3:
-                        //miBundle_category.putInt("Selected_Category",seleccion_category);
-                        //category.putExtras(miBundle_category);
+
                         //Toast.makeText(getApplicationContext(),"Selecciono 3",Toast.LENGTH_LONG).show();
                         ArrayAdapter<CharSequence> adapterListView_Trigo=ArrayAdapter.createFromResource(getApplicationContext(), R.array.Trigo_options,R.layout.listview_item_size);
                         ListTrigo.setAdapter(adapterListView_Trigo);

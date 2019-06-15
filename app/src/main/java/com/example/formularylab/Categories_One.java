@@ -31,8 +31,8 @@ public class Categories_One extends AppCompatActivity implements Fragment_Deriva
         int seleccion_category=miBundle.getInt("Selected_Category");
 
 
-          tv1.setText("Escogio: "+seleccion_subcategory);
-          tv2.setText("Aver ahora"+seleccion_category);
+          //tv1.setText("Escogio: "+seleccion_subcategory);
+          //tv2.setText("Aver ahora"+seleccion_category);
         FragmentTransaction transaction=getSupportFragmentManager().beginTransaction();
          if(seleccion_category==1) {
                 switch (seleccion_subcategory) {
@@ -58,7 +58,7 @@ public class Categories_One extends AppCompatActivity implements Fragment_Deriva
                 transaction.commit();
             }
             if(seleccion_category==3){
-                Toast.makeText(getApplicationContext(),"Si sirve",Toast.LENGTH_LONG).show();
+               // Toast.makeText(getApplicationContext(),"Si sirve",Toast.LENGTH_LONG).show();
             }
 
     }
