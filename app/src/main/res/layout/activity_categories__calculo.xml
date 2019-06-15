@@ -24,6 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
+        android:id="@+id/frame_fragments"
         android:layout_width="395dp"
         android:layout_height="593dp"
         tools:layout_editor_absoluteX="8dp"
