@@ -11,8 +11,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-
 public class MainActivity extends AppCompatActivity {
 
     private Spinner spinner1;
@@ -43,12 +41,17 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch(position){
                     case 1:
-
-                        ArrayAdapter<CharSequence> adapterListView=ArrayAdapter.createFromResource(getApplicationContext(), R.array.Trigo_options,R.layout.listview_item_size);
-                        ListTrigo.setAdapter(adapterListView);
-
+                        ArrayAdapter<CharSequence> adapterListView_Calcu=ArrayAdapter.createFromResource(getApplicationContext(), R.array.Calcu_options,R.layout.listview_item_size);
+                        ListTrigo.setAdapter(adapterListView_Calcu);
                         break;
-
+                    case 2:
+                        ArrayAdapter<CharSequence> adapterListView_Fisica=ArrayAdapter.createFromResource(getApplicationContext(), R.array.Fisica_options,R.layout.listview_item_size);
+                        ListTrigo.setAdapter(adapterListView_Fisica);
+                        break;
+                    case 3:
+                        ArrayAdapter<CharSequence> adapterListView_Trigo=ArrayAdapter.createFromResource(getApplicationContext(), R.array.Trigo_options,R.layout.listview_item_size);
+                        ListTrigo.setAdapter(adapterListView_Trigo);
+                        break;
                 }
             }
 
@@ -65,12 +68,12 @@ public class MainActivity extends AppCompatActivity {
                 switch (position){
                     case 0:
                         Toast.makeText(getApplicationContext(),"Aver si sirve",Toast.LENGTH_LONG).show();
-                        categorys=new Intent(MainActivity.this,Categories.class);
+                        categorys=new Intent(MainActivity.this, Categories_Trigo.class);
                         startActivity(categorys);
                         break;
                     case 1:
                         Toast.makeText(getApplicationContext(),"Aver si sirve",Toast.LENGTH_LONG).show();
-                        categorys=new Intent(MainActivity.this,Categories.class);
+                        categorys=new Intent(MainActivity.this, Categories_Trigo.class);
                         startActivity(categorys);
                         break;
                 }
