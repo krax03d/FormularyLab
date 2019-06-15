@@ -3,19 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment_Derivar">
+    tools:context=".Fragment_Integrar">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView4"
         android:layout_width="match_parent"
-        android:layout_height="74dp"
+        android:layout_height="81dp"
         android:gravity="center|center_horizontal"
-        android:text="Poner Como derivar"
-        android:textSize="36sp" />
+        android:text="Poner como Integrar"
+        android:textSize="30sp" />
 
 </FrameLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FormulasProyecto</string>
+    <string name="app_name">FormuLab</string>
     <string name="tv_Principal">Bienvenidos a su aplicación de formulas</string>
     <string name="tv2_Principal">Por favor elija una opción</string>
     <string name="tv_Calculo">Calculo</string>

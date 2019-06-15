@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="Calcu_options">
-        <item>Derivar</item>
-        <item>Integrar</item>
-        <item>Calcular</item>
+        <item>Derivaciones</item>
+        <item>Integrales</item>
+        <item>Limites</item>
 
     </string-array>
 

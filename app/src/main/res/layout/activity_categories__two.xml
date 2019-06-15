@@ -4,18 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Categories_Trigo">
+    tools:context=".Categories_Two">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="291dp"
-        android:layout_height="106dp"
+        android:id="@+id/textView3"
+        android:layout_width="261dp"
+        android:layout_height="64dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="@string/tv_Trigonometria"
-        android:textSize="36sp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/tv_Fisica"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

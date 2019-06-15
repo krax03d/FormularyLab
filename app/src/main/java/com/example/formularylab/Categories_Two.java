@@ -3,11 +3,11 @@ package com.example.formularylab;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Categories_Trigo extends AppCompatActivity {
+public class Categories_Two extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_categories_trigo);
+        setContentView(R.layout.activity_categories__two);
     }
 }
