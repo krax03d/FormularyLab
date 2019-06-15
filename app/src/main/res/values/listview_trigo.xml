@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Trigo_options">
+        <item>Seno</item>
+        <item>Coseno</item>
+        <item>Tangente</item>
+        <item>Secante</item>
+        <item>Cotangente</item>
+        <item>Cosecante</item>
+    </string-array>
+
+
+</resources>
