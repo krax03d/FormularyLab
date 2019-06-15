@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">FormularyLab</string>
+    <string name="app_name">FormulasProyecto</string>
+    <string name="tv_Principal">Bienvenidos a su aplicación de formulas</string>
+    <string name="tv2_Principal">Por favor elija una opción</string>
+    <string name="tv_Calculo">Calculo</string>
+    <string name="tv_Trigonometria">Trigonometria</string>
+    <string name="tv_Fisica">Fisica</string>
+
+
+
 </resources>
