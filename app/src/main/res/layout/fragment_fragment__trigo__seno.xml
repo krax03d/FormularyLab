@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trigo_seno_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment_Trigo_Seno">
+
+    <TextView
+        android:id="@+id/tv_trigo_seno_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/trigo_seno_tittle"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/tv_trigo_seno_content"
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/trigo_seno_content"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/iv_trigo_seno_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/trigo_seno_tittle"
+        android:src="@mipmap/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/bt_trigo_seno_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/trigo_seno_save" />
+
+    <Button
+        android:id="@+id/bt_trigo_seno_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/trigo_seno__more" />
+</LinearLayout>

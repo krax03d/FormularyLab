@@ -12,7 +12,10 @@ public class Categories_One extends AppCompatActivity implements Fragment_Deriva
         Fragment_Vectores.OnFragmentInteractionListener,
         Fragment_Limitles.OnFragmentInteractionListener,
         Fragment_move_rectiline.OnFragmentInteractionListener,
-        Fragment_Move_Parabolic.OnFragmentInteractionListener{
+        Fragment_Move_Parabolic.OnFragmentInteractionListener,
+        Fragment_Trigo_Seno.OnFragmentInteractionListener,
+        Fragment_Trigo_Coseno.OnFragmentInteractionListener,
+        Fragment_Trigo_Tangente.OnFragmentInteractionListener{
 
     TextView tv1;
     TextView tv2;
@@ -22,6 +25,9 @@ public class Categories_One extends AppCompatActivity implements Fragment_Deriva
     Fragment_Limitles fragment_limitles;
     Fragment_move_rectiline fragment_move_rectiline;
     Fragment_Move_Parabolic fragment_move_parabolic;
+    Fragment_Trigo_Seno fragment_trigo_seno;
+    Fragment_Trigo_Coseno fragment_trigo_coseno;
+    Fragment_Trigo_Tangente fragment_trigo_tangente;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +38,9 @@ public class Categories_One extends AppCompatActivity implements Fragment_Deriva
         fragment_limitles=new Fragment_Limitles();
         fragment_move_rectiline=new Fragment_move_rectiline();
         fragment_move_parabolic=new Fragment_Move_Parabolic();
+        fragment_trigo_seno=new Fragment_Trigo_Seno();
+        fragment_trigo_coseno=new Fragment_Trigo_Coseno();
+        fragment_trigo_tangente=new Fragment_Trigo_Tangente();
         //Recibimos el valor de la sub_categoria
         //tv1=(TextView) findViewById(R.id.tv_Cal);
         //tv2=(TextView) findViewById(R.id.tv_cal2);
@@ -74,6 +83,19 @@ public class Categories_One extends AppCompatActivity implements Fragment_Deriva
             }
             if(seleccion_category==3){
                // Toast.makeText(getApplicationContext(),"Si sirve",Toast.LENGTH_LONG).show();
+                switch (seleccion_subcategory) {
+                    case 0:
+                        transaction.add(R.id.frame_fragments, fragment_trigo_seno);
+                        break;
+                    case 1:
+                        transaction.add(R.id.frame_fragments, fragment_trigo_coseno);
+                        break;
+                    case 2:
+                        transaction.add(R.id.frame_fragments, fragment_trigo_tangente);
+                        break;
+
+                }
+                transaction.commit();
             }
 
     }
