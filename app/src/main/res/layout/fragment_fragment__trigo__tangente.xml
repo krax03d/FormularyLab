@@ -26,9 +26,9 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/trigo_tangente_tittle"
-        android:src="@mipmap/ic_launcher_foreground" />
+        android:layout_height="189dp"
+        android:background="@drawable/trigo_tangente"
+        android:contentDescription="@string/trigo_tangente_tittle" />
 
     <Button
         android:id="@+id/bt_trigo_tangente_save"

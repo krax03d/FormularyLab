@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/tv_vectores_tittle"
         android:layout_width="match_parent"
-        android:layout_height="79dp"
+        android:layout_height="54dp"
         android:gravity="center|center_horizontal"
         android:text="@string/vectors_tittle"
         android:textSize="30sp" />
@@ -25,10 +25,11 @@
 
     <ImageView
         android:id="@+id/iv_vectors_image"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/vectors_tittle"
-        android:src="@mipmap/ic_launcher_foreground" />
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:background="@drawable/vectors"
+        android:contentDescription="@string/vectors_tittle" />
 
     <Button
         android:id="@+id/bt_vectors_save"

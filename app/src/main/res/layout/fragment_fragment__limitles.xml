@@ -26,10 +26,11 @@
 
     <ImageView
         android:id="@+id/iv_limitles_image"
-        android:layout_width="match_parent"
-        android:layout_height="119dp"
+        android:layout_width="270dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
         android:contentDescription="@string/limitles_tittle"
-        android:src="@mipmap/ic_launcher_foreground" />
+        android:background="@drawable/limitles" />
 
     <Button
         android:id="@+id/bt_limitles_save"

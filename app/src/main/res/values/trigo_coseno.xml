@@ -3,8 +3,7 @@
 
     <string name="trigo_coseno_tittle">Coseno</string>
     <string name="trigo_coseno_content">En trigonometría, el coseno de un ángulo de un triángulo rectángulo se define como
-        la razón entre el cateto adyacente a dicho ángulo y la hipotenusa: Esta razón no depende del tamaño del triángulo rectángulo
-        escogido sino que es una función dependiente del ángulo. </string>
+        la razón entre el cateto adyacente a dicho ángulo y la hipotenusa:</string>
     <string name="trigo_coseno_save">Guardar</string>
     <string name="trigo_coseno__more">Mas Información</string>
 </resources>

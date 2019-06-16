@@ -28,10 +28,11 @@
 
     <ImageView
         android:id="@+id/iv_derivation_image"
-        android:layout_width="match_parent"
-        android:layout_height="91dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
         android:contentDescription="@string/derivacion_tittle"
-        android:src="@mipmap/ic_launcher_round" />
+        android:background="@drawable/derivar" />
 
     <Button
         android:id="@+id/bt_derivation_save"

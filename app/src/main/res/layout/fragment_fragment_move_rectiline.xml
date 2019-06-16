@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/tv_move_rectiline_uniform_little"
         android:layout_width="match_parent"
-        android:layout_height="76dp"
+        android:layout_height="51dp"
         android:gravity="center|center_horizontal"
         android:text="@string/move_rectiline_uniform_tittle"
         android:textSize="24sp" />
@@ -25,10 +25,11 @@
 
     <ImageView
         android:id="@+id/iv_move_rectiline_uniform_tittle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/move_rectiline_uniform_tittle"
-        android:src="@mipmap/ic_launcher_foreground" />
+        android:layout_width="281dp"
+        android:layout_height="242dp"
+        android:layout_gravity="center"
+        android:background="@drawable/move_rectiline_uniform"
+        android:contentDescription="@string/move_rectiline_uniform_tittle" />
 
     <Button
         android:id="@+id/bt_move_rectiline_uniform_save"

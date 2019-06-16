@@ -26,10 +26,11 @@
 
     <ImageView
         android:id="@+id/iv_integrals_image"
-        android:layout_width="match_parent"
-        android:layout_height="86dp"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
         android:contentDescription="@string/integrar_tittle"
-        android:src="@mipmap/ic_launcher_foreground" />
+        android:background="@drawable/integrales2"/>
 
     <Button
         android:id="@+id/bt_integrals_save"

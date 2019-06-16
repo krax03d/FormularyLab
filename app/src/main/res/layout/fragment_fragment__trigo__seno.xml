@@ -19,7 +19,7 @@
     <TextView
         android:id="@+id/tv_trigo_seno_content"
         android:layout_width="match_parent"
-        android:layout_height="224dp"
+        android:layout_height="147dp"
         android:gravity="center|center_horizontal"
         android:text="@string/trigo_seno_content"
         android:textSize="24sp" />
@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:contentDescription="@string/trigo_seno_tittle"
-        android:src="@mipmap/ic_launcher_foreground" />
+        android:background="@drawable/trigo_seno" />
 
     <Button
         android:id="@+id/bt_trigo_seno_save"
