@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/fondo_main"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Fragment_move_rectiline">
@@ -20,13 +21,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center|center_horizontal"
+        android:background="@drawable/bordes"
         android:text="@string/move_rectiline_uniform_content"
         android:textSize="22sp" />
 
     <ImageView
         android:id="@+id/iv_move_rectiline_uniform_tittle"
-        android:layout_width="281dp"
-        android:layout_height="242dp"
+        android:layout_width="wrap_content"
+        android:layout_height="209dp"
         android:layout_gravity="center"
         android:background="@drawable/move_rectiline_uniform"
         android:contentDescription="@string/move_rectiline_uniform_tittle" />

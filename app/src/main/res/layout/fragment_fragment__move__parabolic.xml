@@ -4,21 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_main"
     android:orientation="vertical"
     tools:context=".Fragment_Move_Parabolic">
 
     <TextView
         android:id="@+id/tv_move_parabolic_tittle"
         android:layout_width="match_parent"
-        android:layout_height="74dp"
+        android:layout_height="52dp"
         android:gravity="center|center_horizontal"
         android:text="@string/move_parabolic_tittle"
-        android:textSize="24sp" />
+        android:textSize="23sp" />
 
     <TextView
         android:id="@+id/tv_move_parabolic_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/bordes"
         android:gravity="center|center_horizontal"
         android:text="@string/move_parabolic_content"
         android:textSize="21sp" />

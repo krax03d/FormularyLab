@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/fondo_main"
     tools:context=".Fragment_Integrar">
 
     <TextView
@@ -20,6 +21,7 @@
         android:id="@+id/tv_integrals_content"
         android:layout_width="match_parent"
         android:layout_height="254dp"
+        android:background="@drawable/bordes"
         android:gravity="center|center_horizontal"
         android:text="@string/integrar_content"
         android:textSize="24sp" />

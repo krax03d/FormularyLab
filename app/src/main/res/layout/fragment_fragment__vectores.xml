@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_main"
     android:orientation="vertical"
     tools:context=".Fragment_Vectores">
 
@@ -19,9 +20,10 @@
         android:id="@+id/tv_vectors_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/bordes"
         android:gravity="center|center_horizontal"
         android:text="@string/vectors_content"
-        android:textSize="21sp" />
+        android:textSize="19sp" />
 
     <ImageView
         android:id="@+id/iv_vectors_image"

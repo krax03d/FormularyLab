@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
                 switch(position){
                     case 0:
                        // Toast.makeText(getApplicationContext(),"Seleccione Alguna Opción",Toast.LENGTH_LONG).show();
+
+                        ListTrigo.setAdapter(null);
                         break;
                     case 1:
 

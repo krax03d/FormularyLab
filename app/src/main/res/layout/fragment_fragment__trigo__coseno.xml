@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_main"
     android:orientation="vertical"
     tools:context=".Fragment_Trigo_Coseno">
 
@@ -19,6 +20,7 @@
         android:id="@+id/tv_trigo_coseno_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/bordes"
         android:gravity="center|center_horizontal"
         android:text="@string/trigo_coseno_content"
         android:textSize="24sp" />
