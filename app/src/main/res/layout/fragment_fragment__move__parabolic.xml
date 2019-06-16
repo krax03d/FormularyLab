@@ -37,7 +37,7 @@
         android:text="@string/move_parabolic_save" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/bt_move_parabolic_more"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/move_parabolic_more" />
