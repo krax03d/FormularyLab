@@ -34,13 +34,13 @@
         android:src="@mipmap/ic_launcher_round" />
 
     <Button
-        android:id="@+id/tv_derivation_save"
+        android:id="@+id/bt_derivation_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/derivacion_save" />
 
     <Button
-        android:id="@+id/tv_derivation_more"
+        android:id="@+id/bt_derivation_more"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/derivacion_more" />
