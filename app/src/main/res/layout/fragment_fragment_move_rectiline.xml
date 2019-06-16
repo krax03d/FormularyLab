@@ -32,13 +32,17 @@
 
     <Button
         android:id="@+id/bt_move_rectiline_uniform_save"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/boton_save_effect"
         android:text="@string/move_rectiline_uniform_save" />
 
     <Button
         android:id="@+id/bt_move_rectiline_uniform_more"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/boton_more_effect"
         android:text="@string/move_rectiline_uniform_more" />
 </LinearLayout>
