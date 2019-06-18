@@ -50,8 +50,8 @@
 
     <Button
         android:id="@+id/bt_trigo_seno_save"
-        android:layout_width="230dp"
-        android:layout_height="50dp"
+        android:layout_width="221dp"
+        android:layout_height="49dp"
         android:layout_gravity="center"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -63,8 +63,8 @@
 
     <Button
         android:id="@+id/bt_trigo_seno_more"
-        android:layout_width="230dp"
-        android:layout_height="50dp"
+        android:layout_width="218dp"
+        android:layout_height="49dp"
         android:layout_gravity="center"
         android:layout_marginTop="8dp"
         android:background="@drawable/boton_more_effect"

@@ -50,11 +50,12 @@
 
     <Button
         android:id="@+id/bt_move_rectiline_uniform_save"
-        android:layout_width="230dp"
-        android:layout_height="50dp"
+        android:layout_width="209dp"
+        android:layout_height="47dp"
         android:layout_gravity="center"
-        android:layout_marginStart="88dp"
-        android:layout_marginLeft="88dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/boton_save_effect"
         android:text="@string/move_rectiline_uniform_save"
         app:layout_constraintStart_toEndOf="@+id/tv_move_rectiline_uniform_content"
@@ -62,14 +63,14 @@
 
     <Button
         android:id="@+id/bt_move_rectiline_uniform_more"
-        android:layout_width="230dp"
+        android:layout_width="208dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginStart="88dp"
-        android:layout_marginLeft="88dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginLeft="220dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/boton_more_effect"
         android:text="@string/move_rectiline_uniform_more"
         app:layout_constraintStart_toEndOf="@+id/tv_move_rectiline_uniform_content"
-        app:layout_constraintTop_toBottomOf="@+id/bt_move_rectiline_uniform_save" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_move_rectiline_uniform_tittle" />
 </android.support.constraint.ConstraintLayout>
