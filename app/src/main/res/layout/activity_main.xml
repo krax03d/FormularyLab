@@ -72,4 +72,18 @@
         app:layout_constraintTop_toBottomOf="@+id/spinnerPrincipal"
         app:layout_constraintVertical_bias="0.242" />
 
+    <Button
+        android:id="@+id/bt_qr"
+        android:layout_width="59dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/bt_scanner_qr"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv2Principal"
+        app:layout_constraintTop_toTopOf="@+id/tv2Principal"
+        tools:text="@string/bt_scanner_qr" />
+
 </android.support.constraint.ConstraintLayout>

@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 /**
@@ -26,6 +27,7 @@ public class Fragment_Integrar extends Fragment {
     private static final String ARG_PARAM2 = "param2";
     Button navigator;
     View vista;
+    Button save;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -71,7 +73,13 @@ public class Fragment_Integrar extends Fragment {
 
         vista=inflater.inflate(R.layout.fragment_fragment__integrar, container, false);
         navigator=(Button) vista.findViewById(R.id.bt_integrals_more);
-
+        save=(Button) vista.findViewById(R.id.bt_integrals_save);
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(),"Guardado Exitosamente",Toast.LENGTH_LONG).show();
+            }
+        });
         navigator.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

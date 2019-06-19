@@ -20,6 +20,7 @@ public class Fragment_Derivar extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
     Button navigator;
+    Button save;
     View vista;
 
     // TODO: Rename and change types of parameters
@@ -63,6 +64,15 @@ public class Fragment_Derivar extends Fragment {
 
         vista=inflater.inflate(R.layout.fragment_fragment__derivar, container, false);
         navigator=(Button) vista.findViewById(R.id.bt_derivation_more);
+        save=(Button) vista.findViewById(R.id.bt_derivation_save);
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+              Toast.makeText(getContext(),"Guardado Exitosamente",Toast.LENGTH_LONG).show();
+            }
+        });
+
+
 
         navigator.setOnClickListener(new View.OnClickListener() {
             @Override

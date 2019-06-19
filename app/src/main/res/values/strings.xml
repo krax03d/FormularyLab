@@ -3,6 +3,10 @@
     <string name="tv_Principal">Bienvenidos a su aplicación de formulas</string>
     <string name="tv2_Principal">Por favor elija una opción</string>
     <string name="tv_Category">FormuLab</string>
+    <string name="bt_scanner_qr">QR</string>
+    <string name="scanner_qr_tittle">Escaneo Completado</string>
+    <string name="save_button">Guardado Exitosamente</string>
+
 
 
     <!-- TODO: Remove or change this placeholder text -->
