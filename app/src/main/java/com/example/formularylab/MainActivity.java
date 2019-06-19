@@ -154,10 +154,11 @@ public class MainActivity extends AppCompatActivity  {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        //IntentResult result_Scanner = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
-            Intent scann_QR = null;
-            scann_QR = new Intent(MainActivity.this, scan_code_qr.class);
-            startActivity(scann_QR);
+        IntentResult result_Scanner = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
+            Intent scann__Code_QR = null;
+            Toast.makeText(this,"Error al scanner el Codigo"+result_Scanner,Toast.LENGTH_LONG);
+            scann__Code_QR = new Intent(MainActivity.this, Scan_Code_QR.class);
+           startActivity(scann__Code_QR);
         }
         //if(result_Scanner!=null){
             //if(result_Scanner.getContents()!=null){

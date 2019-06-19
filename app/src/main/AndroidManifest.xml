@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".scan_code_qr"></activity>
+        <activity android:name=".Scan_Code_QR"></activity>
         <activity android:name=".navigator_web" />
         <activity android:name=".Categories_One" />
         <activity android:name=".MainActivity">
