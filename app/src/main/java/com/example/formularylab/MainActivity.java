@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity  {
         spinner1 = (Spinner) findViewById(R.id.spinnerPrincipal);
         ListTrigo = (ListView) findViewById(R.id.lv_main);
         qr = (Button) findViewById(R.id.bt_qr);
+        AdminSQLiteOpenHelper conn= new AdminSQLiteOpenHelper( this,"db_formulas",null,1);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.spinnerOpciones, R.layout.spinner_item_size);
         spinner1.setAdapter(adapter);

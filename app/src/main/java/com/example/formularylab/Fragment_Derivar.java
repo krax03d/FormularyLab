@@ -14,6 +14,8 @@ import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.formularylab.Utilidades.Utilidades;
+
 
 public class Fragment_Derivar extends Fragment {
 
@@ -67,20 +69,14 @@ public class Fragment_Derivar extends Fragment {
         vista=inflater.inflate(R.layout.fragment_fragment__derivar, container, false);
         navigator=(Button) vista.findViewById(R.id.bt_derivation_more);
         save=(Button) vista.findViewById(R.id.bt_derivation_save);
+
         save.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,"administracion",null, 1);
-                SQLiteDatabase DataBase = admin.getWritableDatabase();
-
-                String imagen = "@drawable/derivar";
-                ContentValues imagensave = new ContentValues();
-                imagensave.put("imagen" , imagen);
-                DataBase.insert("formulas",null,imagensave);
-                DataBase.close();
-              Toast.makeText(getContext(),"Guardado Exitosamente",Toast.LENGTH_LONG).show();
+            public void onClick(View view) {
+                SaveFormula();
             }
         });
+
 
 
 
@@ -98,6 +94,22 @@ public class Fragment_Derivar extends Fragment {
             }
         });
         return(vista);
+    }
+
+    private void SaveFormula() {
+        String imagen = "@drawable/derivar";
+        int id=1;
+        AdminSQLiteOpenHelper conn= new AdminSQLiteOpenHelper( getContext(),"db_formulas",null,1);
+        SQLiteDatabase DataBase = conn.getWritableDatabase();
+
+
+        ContentValues values = new ContentValues();
+        values.put(Utilidades.CAMPO_NOMBRE, imagen);
+        values.put(Utilidades.CAMPO_ID,id);
+        Long idResultante=DataBase.insert(Utilidades.TABLA_FORMULAS,Utilidades.CAMPO_ID,values);
+        Toast.makeText(getContext(),"Guardado Exitosamente",Toast.LENGTH_LONG).show();
+        DataBase.close();
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event
