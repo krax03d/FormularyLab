@@ -1,7 +1,9 @@
 package com.example.formularylab;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -68,6 +70,14 @@ public class Fragment_Derivar extends Fragment {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,"administracion",null, 1);
+                SQLiteDatabase DataBase = admin.getWritableDatabase();
+
+                String imagen = "@drawable/derivar";
+                ContentValues imagensave = new ContentValues();
+                imagensave.put("imagen" , imagen);
+                DataBase.insert("formulas",null,imagensave);
+                DataBase.close();
               Toast.makeText(getContext(),"Guardado Exitosamente",Toast.LENGTH_LONG).show();
             }
         });
