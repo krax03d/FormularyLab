@@ -79,13 +79,13 @@
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:text="@string/bt_scanner_qr"
+        android:text="@string/bt_scanner_qr_main"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.387"
         app:layout_constraintStart_toEndOf="@+id/tv2Principal"
         app:layout_constraintTop_toTopOf="@+id/tv2Principal"
-        tools:text="@string/bt_scanner_qr" />
+        tools:text="@string/bt_scanner_qr_main" />
 
     <Button
         android:id="@+id/bt_saved_formulas_main"

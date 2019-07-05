@@ -119,7 +119,7 @@ public class Fragment_move_rectiline extends Fragment {
     }
     private void SaveFormula() {
         String imagen = "@drawable/move_rectiline_uniform";
-        int id=1;
+        int id=5;
         AdminSQLiteOpenHelper conn= new AdminSQLiteOpenHelper( getContext(),"db_formulas",null,1);
         SQLiteDatabase DataBase = conn.getWritableDatabase();
 

@@ -104,12 +104,14 @@ public class MainActivity extends AppCompatActivity  {
             }
         });
 
+
+
         qr.setOnClickListener(new View.OnClickListener() {
                 @Override
             public void onClick(View v) {
-                   new IntentIntegrator(MainActivity.this).initiateScan();
 
-
+                    Intent Scann_QR = new Intent(MainActivity.this, Scanner_QR.class);
+                    startActivity(Scann_QR);
             }
         });
 
@@ -162,32 +164,8 @@ public class MainActivity extends AppCompatActivity  {
 
         }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        IntentResult result_Scanner = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
-        tv1.setText("El resultado QR es:"+result_Scanner);
-        Intent ResultScanner=null;
-        ResultScanner=new Intent(MainActivity.this,Scanner_QR.class);
-        startActivity(ResultScanner);
-        //Intent scann__Code_QR=null;
-        //scann__Code_QR = new Intent(MainActivity.this, Scan_Code_QR.class);
 
 
-        //startActivity(scann__Code_QR);
-
-           // Toast.makeText(this,"Error al scanner el Codigo"+result_Scanner,Toast.LENGTH_LONG);
-
-
-    }
-        //if(result_Scanner!=null){
-            //if(result_Scanner.getContents()!=null){
-              //  Toast.makeText(this,"El codigo es"+result_Scanner,Toast.LENGTH_LONG);
-            //}else{
-           //     Toast.makeText(this,"Error al scanner el Codigo"+result_Scanner,Toast.LENGTH_LONG);
-         //   }
-
-       // }
     }
 
 

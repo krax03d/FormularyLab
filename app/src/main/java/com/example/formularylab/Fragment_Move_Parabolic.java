@@ -120,7 +120,7 @@ public class Fragment_Move_Parabolic extends Fragment {
     }
     private void SaveFormula() {
         String imagen = "@drawable/move_parabolic";
-        int id=1;
+        int id=4;
         AdminSQLiteOpenHelper conn= new AdminSQLiteOpenHelper( getContext(),"db_formulas",null,1);
         SQLiteDatabase DataBase = conn.getWritableDatabase();
 
