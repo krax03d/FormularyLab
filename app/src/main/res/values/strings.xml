@@ -6,6 +6,8 @@
     <string name="bt_scanner_qr">QR</string>
     <string name="scanner_qr_tittle">Escaneo Completado</string>
     <string name="save_button">Guardado Exitosamente</string>
+    <string name="save_formulas">Formulas Guardadas</string>
+    <string name="bt_save_formulas">Fav</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

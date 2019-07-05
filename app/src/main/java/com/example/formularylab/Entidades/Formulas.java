@@ -5,8 +5,13 @@ public class Formulas {
     private Integer id;
     private String nombre;
 
-    public Formulas(Integer id, String nombre) {
+
+    public Formulas() {
         this.id = id;
+        this.nombre = nombre;
+    }
+
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
@@ -14,7 +19,7 @@ public class Formulas {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -22,8 +27,9 @@ public class Formulas {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+
+
+
+
 }
 

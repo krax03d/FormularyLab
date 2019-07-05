@@ -13,6 +13,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.formularylab.Entidades.Formulas;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity  {
     private boolean PrimeraVez = true;
     private ListView ListTrigo;
     private Button qr;
+    private Button Fav;
 
 
     @Override
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity  {
         spinner1 = (Spinner) findViewById(R.id.spinnerPrincipal);
         ListTrigo = (ListView) findViewById(R.id.lv_main);
         qr = (Button) findViewById(R.id.bt_qr);
+        Fav=(Button) findViewById(R.id.bt_saved_formulas_main);
         AdminSQLiteOpenHelper conn= new AdminSQLiteOpenHelper( this,"db_formulas",null,1);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.spinnerOpciones, R.layout.spinner_item_size);
@@ -93,12 +96,19 @@ public class MainActivity extends AppCompatActivity  {
 
 
 
-
+        Fav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent fav = new Intent(MainActivity.this, Saved_Formulas.class);
+                startActivity(fav);
+            }
+        });
 
         qr.setOnClickListener(new View.OnClickListener() {
                 @Override
             public void onClick(View v) {
                    new IntentIntegrator(MainActivity.this).initiateScan();
+
 
             }
         });
