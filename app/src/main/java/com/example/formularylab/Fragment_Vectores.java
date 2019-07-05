@@ -1,7 +1,9 @@
 package com.example.formularylab;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.formularylab.Utilidades.Utilidades;
 
 
 /**
@@ -78,7 +82,7 @@ public class Fragment_Vectores extends Fragment {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(),"Guardado Exitosamente",Toast.LENGTH_LONG).show();
+                SaveFormula();
             }
         });
         navigator.setOnClickListener(new View.OnClickListener() {
@@ -114,7 +118,21 @@ public class Fragment_Vectores extends Fragment {
                     + " must implement OnFragmentInteractionListener");
         }
     }
+    private void SaveFormula() {
+        String imagen = "@drawable/vectors";
+        int id=1;
+        AdminSQLiteOpenHelper conn= new AdminSQLiteOpenHelper( getContext(),"db_formulas",null,1);
+        SQLiteDatabase DataBase = conn.getWritableDatabase();
 
+
+        ContentValues values = new ContentValues();
+        values.put(Utilidades.CAMPO_NOMBRE, imagen);
+        values.put(Utilidades.CAMPO_ID,id);
+        Long idResultante=DataBase.insert(Utilidades.TABLA_FORMULAS,Utilidades.CAMPO_ID,values);
+        Toast.makeText(getContext(),"Guardado Exitosamente",Toast.LENGTH_LONG).show();
+        DataBase.close();
+
+    }
     @Override
     public void onDetach() {
         super.onDetach();
