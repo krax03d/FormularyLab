@@ -119,7 +119,7 @@ public class Fragment_Integrar extends Fragment {
         }
     }
     private void SaveFormula() {
-        String imagen = "@drawable/integrales2";
+        String imagen = "Integrales";
         int id=2;
         AdminSQLiteOpenHelper conn= new AdminSQLiteOpenHelper( getContext(),"db_formulas",null,1);
         SQLiteDatabase DataBase = conn.getWritableDatabase();

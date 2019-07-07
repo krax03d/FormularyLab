@@ -97,7 +97,7 @@ public class Fragment_Derivar extends Fragment {
     }
 
     private void SaveFormula() {
-        String imagen = "@drawable/derivar";
+        String imagen = "Derivadas";
         int id=1;
         AdminSQLiteOpenHelper conn= new AdminSQLiteOpenHelper( getContext(),"db_formulas",null,1);
         SQLiteDatabase DataBase = conn.getWritableDatabase();

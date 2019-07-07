@@ -119,7 +119,7 @@ public class Fragment_Trigo_Tangente extends Fragment {
         }
     }
     private void SaveFormula() {
-        String imagen = "@drawable/trigo_tangente";
+        String imagen = "Tangente";
         int id=8;
         AdminSQLiteOpenHelper conn= new AdminSQLiteOpenHelper( getContext(),"db_formulas",null,1);
         SQLiteDatabase DataBase = conn.getWritableDatabase();

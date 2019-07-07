@@ -118,7 +118,7 @@ public class Fragment_Trigo_Seno extends Fragment {
         }
     }
     private void SaveFormula() {
-        String imagen = "@drawable/trigo_seno";
+        String imagen = "Seno";
         int id=7;
         AdminSQLiteOpenHelper conn= new AdminSQLiteOpenHelper( getContext(),"db_formulas",null,1);
         SQLiteDatabase DataBase = conn.getWritableDatabase();

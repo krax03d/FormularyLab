@@ -8,6 +8,7 @@
     <string name="save_button">Guardado Exitosamente</string>
     <string name="save_formulas">Formulas Guardadas</string>
     <string name="bt_save_formulas">Fav</string>
+    <string name="bt_save_formulas_delete">Borrar Formulas</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

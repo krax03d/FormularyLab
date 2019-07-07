@@ -15,6 +15,7 @@
         <activity android:name=".Saved_Formulas" />
         <activity android:name=".Scanner_QR" />
         <activity android:name=".Scan_QR_Method" />
+        <activity android:name=".Show_Formulas" />
         <activity android:name=".navigator_web" />
         <activity android:name=".Categories_One" />
         <activity android:name=".MainActivity">

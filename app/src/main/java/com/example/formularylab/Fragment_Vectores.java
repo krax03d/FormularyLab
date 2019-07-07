@@ -119,7 +119,7 @@ public class Fragment_Vectores extends Fragment {
         }
     }
     private void SaveFormula() {
-        String imagen = "@drawable/vectors";
+        String imagen = "Vectores";
         int id=9;
         AdminSQLiteOpenHelper conn= new AdminSQLiteOpenHelper( getContext(),"db_formulas",null,1);
         SQLiteDatabase DataBase = conn.getWritableDatabase();

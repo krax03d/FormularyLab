@@ -120,7 +120,7 @@ public class Fragment_Trigo_Coseno extends Fragment {
     }
 
     private void SaveFormula() {
-        String imagen = "@drawable/trigo_coseno";
+        String imagen = "Coseno";
         int id=6;
         AdminSQLiteOpenHelper conn= new AdminSQLiteOpenHelper( getContext(),"db_formulas",null,1);
         SQLiteDatabase DataBase = conn.getWritableDatabase();

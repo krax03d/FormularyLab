@@ -120,7 +120,7 @@ public class Fragment_Limitles extends Fragment {
         }
     }
     private void SaveFormula() {
-        String imagen = "@drawable/limitles";
+        String imagen = "Limites";
         int id=3;
         AdminSQLiteOpenHelper conn= new AdminSQLiteOpenHelper( getContext(),"db_formulas",null,1);
         SQLiteDatabase DataBase = conn.getWritableDatabase();
